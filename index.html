@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JB jubilant duplicate</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <style>
+        /* Center the image */
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Disable anti-aliasing for images */
+
+        img {
+            -webkit-font-smoothing: none;
+            -moz-osx-font-smoothing: none;
+            image-rendering: -moz-crisp-edges;
+            /* Firefox */
+            image-rendering: -webkit-optimize-contrast;
+            /* WebKit (non-Firefox) */
+            image-rendering: -o-crisp-edges;
+            /* Opera */
+            image-rendering: pixelated;
+            /* CSS4 (currently unsupported) */
+            image-rendering: crisp-edges;
+            /* CSS4 (currently unsupported) */
+        }
+
+@font-face {
+    font-family: 'LongPix';
+    src: url('longpixel.ttf');
+}
+
+@font-face {
+    font-family: 'SmallPix';
+    src: url('smallpixel.ttf');
+}
+
+@font-face {
+    font-family: 'Pixelbug';
+    src: url('pixelbug.ttf');
+}
+
+body {
+    font-family: 'SmallPix', 'LongPix', 'Pixelbug', monospace;
+}
+
+    </style>
+
+    <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        div.container p.title {
+            position: relative;
+            top: -30px;
+            font-family: LongPix;
+            font-size: 40px;
+            text-decoration: none;
+            text-transform: none;
+            color: black;
+        }
+
+        div.container p.credits {
+            position: absolute;
+            top: 900px;
+            left: 945px;
+            font-family: SmallPix;
+            font-size: 20px;
+            text-decoration: none;
+            text-transform: none;
+            color: dimgray;
+        }
+
+        div.container a.next {
+            position: absolute;
+            top: 550px;
+            left: 200px;
+        }
+
+        div.boxbax {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div.lightbox {
+            position: relative;
+            top: 17px;
+        }
+    </style>
+</head>
+
+<body style="background-color: lightgray;">
+    <div class="container" style="text-align: center;">
+        <div class="boxbax" style="background-color: darkgray; display:; height: 950px; width: 800px;">
+            <div class="lightbox" style="background-color: dimgray; display:; height: 850px; width: 600px;">
+                <p class="title">Morgue</p>
+                <a class="next" href="page1.html"><img src="start2gg.png" alt="Start"></a>
+                <p class="credits">website, art and writing made by brushiol</p>
+                <img src="jdcomixfront.png" style="position: absolute; top:9%; right:8.5%; width: 500px; height: 400px;">
+                </div>
+        </div>
+    </div>
+</body>
+</html>
